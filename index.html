@@ -1,11 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- important meta info about the site -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f4ef">
+    <meta name="description" content="Kaide Salo — software engineer. Thoughtful interfaces, dependable systems, and a little unexpected detail.">
+    
+    <!-- title and site icon -->
+    <title>Kaide Salo — Software Engineer</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+    <!-- site styles and interactions -->
+    <link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
+    <header class="site-header">
+        <a href="#home" class="identity" aria-label="kaide salo, home">
+            <span class="monogram">ks
+                <span>
+                    <svg class="fox-mark" viewBox="0 0 64 64" aria-hidden="true" fill="currentColor">
+                        <path d="M6 5 27 18 15 31Z"/>
+                        <path d="M58 5 37 18 49 31Z" opacity=".8"/>
+                        <path d="M27 18H37L49 31 32 43 15 31Z"/>
+                        <path d="M6 5 15 31 32 43 12 37Z" opacity=".68"/>
+                        <path d="M58 5 49 31 32 43 52 37Z" opacity=".88"/>
+                        <path d="M12 37 32 43V59Z" opacity=".82"/>
+                        <path d="M52 37 32 43V59Z" opacity=".6"/>
+                    </svg>
+                </span>
+            </span>
+
+            <span class="identity-label">Kaide Salo<br>
+                <span>Software Engineer</span>
+            </span>
+        </a>
+
+        <nav aria-label="main nav">
+            <a href="#work" class="nav-work">Work <span>03</span></a>
+            <a href="#about" class="nav-about">About</a>
+            <a href="#resume" class="nav-resume">Resume</a>
+            <a href="#contact" class="nav-contact">Let's Talk 
+                <span aria-hidden="true">
+                    <svg class="arrow-svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4">
+                        <path d="M5 19 19 5M5 5h14v14"/>
+                    </svg>
+                </span>
+            </a>
+        </nav>
+
+        <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="open nav">
+           <!-- <span></span><span></span> -->
+        </button>
+    </header>
     
 </body>
 </html>
