@@ -145,9 +145,10 @@
             </div>
             <div class="projects-grid">
                         <article class="project project-featured" data-catagory="web">
-                            <button class="project-open" data-project="atlas" aria-label="explore atlas project">
-                                <div class="project-image atlas-image">
-                                    <img src="assets/atlas.svg" alt="Atlas analytics interface with a geospatial map and data cards" width="1400" height="1000">
+
+                            <button class="project-open" data-dialog="manaden-dialog" aria-haspopup="dialog" aria-controls="manaden-dialog" aria-label="explore manaden project">
+                                <div class="project-image">
+                                    <img src="assets/manaden-placeholder.svg" alt="Placeholder for ManaDen, a Magic: The Gathering card search and sorting web app; screenshots will be added when the first build is live" width="1200" height="900" loading="lazy">
                                     <span class="project-view">Explore Project 
                                         <span>
                                             <svg class="arrow-svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4">
@@ -157,19 +158,27 @@
                                     </span>
                                     <span class="project-index">01 / 03</span>
                                 </div>
-                                <div class="project-caption">
-                                    <h3>Atlas</h3>
-                                    <p>Making complex data feel simple.</p>
+                                <div>
+                                    <div class="project-caption">
+                                        <div>
+                                            <h3>ManaDen</h3>
+                                            <p>A compact MTG card search page that sorts results by color and set via the Scryfall API. First version in progress.</p>
+                                        </div>
+                                        <div class="project-meta">
+                                            <span>Personal &middot; In progress</span>
+                                        </div>
+                                        <span class="project-arrow" aria-hidden="true">
+                                            <svg class="arrow-svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4">
+                                                <path d="M5 19 19 5M5 5h14v14"/>
+                                            </svg>
+                                        </span>
+                                    </div>
                                 </div>
-                                <div class="project-meta">
-                                    <span>Full-Stack Development</span>
-                                    <span>React . Typescript . PostreSQL</span>
+                                <div class="project-tags">
+                                    <span>Scryfall</span>
+                                    <span>Web</span>
+                                    <span>In progress</span>
                                 </div>
-                                <span class="project-arrow" aria-hidden="true">
-                                    <svg class="arrow-svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4">
-                                        <path d="M5 19 19 5M5 5h14v14"/>
-                                    </svg>
-                                </span>
                     
                             </button>
                         </article>
@@ -308,6 +317,47 @@
 
         </section>
     </main>
+
+    <dialog id="manaden-dialog" class="project-dialog" aria-labelledby="manaden-title">
+        <div class="dialog-toolbar">
+            <span class="eyebrow">Project 01 / 03</span>
+            <button type="button" class="close-dialog" aria-label="close project details">Close <span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="detail-content">
+            <p class="detail-kicker">Personal project &middot; Web</p>
+            <h2 id="manaden-title">ManaDen</h2>
+            <p class="detail-intro">A small web app for searching Magic: The Gathering cards and sorting them by color and set.</p>
+            <img class="detail-image" src="assets/manaden-placeholder.svg" alt="Placeholder for ManaDen; screenshots will replace this once the first build is live" width="1200" height="900" loading="lazy">
+            <div class="detail-grid">
+                <h3>Role</h3>
+                <div><p>Solo designer/developer</p></div>
+
+                <h3>Stack</h3>
+                <div><p>Scryfall API; HTML, CSS, JavaScript</p></div>
+
+                <h3>Status</h3>
+                <div><p>In progress</p></div>
+
+                <h3>Overview</h3>
+                <div>
+                    <p>ManaDen is a Magic: The Gathering card-sorting webpage I&rsquo;ve been meaning to ship for a while. The first version stays intentionally small: look up cards, then organize results by color and set so a pile of names becomes something you can actually browse.</p>
+                    <p>It leans on the Scryfall API for card search and canonical card data, then applies simple front-end sorting for color and set. The goal is a clear, usable tool, not a full collection manager, so the core loop stays search, sort, scan.</p>
+                    <p>I&rsquo;m building it as a personal portfolio piece and a daily-driver for my own card lists. Scope for v1 is the search-and-sort flow; extras can wait until that path feels solid.</p>
+                </div>
+
+                <h3>Next</h3>
+                <div>
+                    <ul>
+                        <li>Wire Scryfall search and render a clean results list</li>
+                        <li>Sort and filter by color and set</li>
+                        <li>Polish empty, loading, and error states plus mobile layout</li>
+                        <li>Publish the repo and a live demo, then add screenshots here</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="detail-note">Screenshots, repo, and demo links will be added when the first build is live.</p>
+        </div>
+    </dialog>
     
 </body>
 </html>

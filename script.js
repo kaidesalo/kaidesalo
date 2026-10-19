@@ -46,22 +46,22 @@ window.matchMedia('(min-width: 701px)').addEventListener('change', e => {
 
 // projects
 const projects = {
-    atlas: {
-        title: 'Atlas',
-        type: 'Full Stack / Concept',
-        intro: 'A clearer view of complex data. A dashboard concept that turns geographic and operational information into an interface people can actually navigate.',
-        iamge: 'atlas.svg',
-        alt: 'Atlas geospatial analytics dashboard',
-        stack:['React', 'Typescript', 'PostgreSQL'],
-        challenge: 'Dense dashboards often bury the useful parts. Atlas explores a map-first workspace that brings context, filters, and essential metrics together without overwhelming the screen.',
-        approach: ['A responsive workspace with a consistent hierarchy across charts, maps, and detail panels.', 'Composable interface components and explicit loading, empty, and error states.', 'An API and data model designed around filtering and progressive disclosure.'],
-        focus: 'Data Visualization · Interface Architecture · Full Stack Design'
+    manaden: {
+        title: 'ManaDen',
+        type: 'Personal / In Progress',
+        intro: 'A small web app for searching Magic: The Gathering cards and sorting them by color and set.',
+        image: 'manaden-placeholder.svg',
+        alt: 'ManaDen placeholder artwork, screenshots coming with the first build',
+        stack:['Scryfall API', 'HTML', 'CSS', 'JavaScript'],
+        challenge: 'A pile of card names is hard to browse. ManaDen keeps the first version intentionally small: look up cards through the Scryfall API, then organize results by color and set so they become something you can actually scan.',
+        approach: ['Wire Scryfall search and render a clean results list.', 'Sort and filter results by color and set.', 'Polish empty, loading, and error states plus the mobile layout.'],
+        focus: 'API Integration · Front End Sorting · Usable Scope'
     },
     orbit: {
         title: 'Orbit',
         type: 'Dev Tools / Concept',
         intro: 'One place to find your flow. A developer workspace concept for keeping projects, activity, and everyday commands within reach.',
-        iamge: 'orbit.svg',
+        image: 'orbit.svg',
         alt: 'Orbit developer workspace',
         stack:['TypeScript', 'Node.js', 'CLI design'],
         challenge: 'Switching between tools interrupts focus. Orbit explores a compact workspace that puts project context and routine actions in one predictable place.',
@@ -72,7 +72,7 @@ const projects = {
         title: 'Folio',
         type: 'Creative Dev / Concept',
         intro: 'A digital space with a point of view. An editorial portfolio concept that pairs expressive typography with a fast, accessible browsing experience.',
-        iamge: 'folio.svg',
+        image: 'folio.svg',
         alt: 'Folio editorial website concept',
         stack:['Next.js', 'CSS', 'Motion design'],
         challenge: 'Creative websites should feel distinctive while remaining easy to use. Folio explores how typography, structure, and restrained motion can give work a memorable setting.',
@@ -103,3 +103,79 @@ document.querySelectorAll('.filter').forEach(button =>
         })
     })
 );
+
+// project detail dialogs
+
+    // cards with a data-dialog attribute open the matching <dialog>
+    // 1. remember which card opened it so focus can go back there
+    // 2. showModal() when supported, otherwise fall back to the open attribute
+    // 3. lock page scroll with body.modal-open while it's open
+let lastDialogTrigger = null
+const nativeDialog = typeof HTMLDialogElement === 'function' &&
+    typeof HTMLDialogElement.prototype.showModal === 'function'
+
+function openProjectDialog(dialog, trigger){
+    if(!dialog || dialog.open) return
+    lastDialogTrigger = trigger || null
+
+    if(nativeDialog){
+        dialog.showModal()
+    } else {
+        dialog.setAttribute('open', '')
+    }
+    document.body.classList.add('modal-open')
+
+    const closeBtn = dialog.querySelector('.close-dialog')
+    if(closeBtn) closeBtn.focus()
+}
+
+function closeProjectDialog(dialog){
+    if(!dialog || !dialog.open) return
+
+    if(nativeDialog){
+        dialog.close()
+    } else {
+        dialog.removeAttribute('open')
+        projectDialogClosed()
+    }
+}
+
+function projectDialogClosed(){
+    document.body.classList.remove('modal-open')
+    if(lastDialogTrigger){
+        lastDialogTrigger.focus()
+        lastDialogTrigger = null
+    }
+}
+
+    // cards are real <button>s, so click also covers Enter and Space
+document.querySelectorAll('.project-open[data-dialog]').forEach(trigger =>
+    trigger.addEventListener('click', () => {
+        openProjectDialog(document.getElementById(trigger.dataset.dialog), trigger)
+    })
+);
+
+document.querySelectorAll('dialog.project-dialog').forEach(dialog => {
+    dialog.querySelectorAll('.close-dialog').forEach(btn =>
+        btn.addEventListener('click', () => closeProjectDialog(dialog))
+    )
+
+        // backdrop click: the target is the <dialog> itself, outside its content box
+    dialog.addEventListener('click', e => {
+        if(e.target !== dialog) return
+        const r = dialog.getBoundingClientRect()
+        const inside = e.clientX >= r.left && e.clientX <= r.right &&
+                       e.clientY >= r.top && e.clientY <= r.bottom
+        if(!inside) closeProjectDialog(dialog)
+    })
+
+        // Esc is handled natively by showModal(); this covers the fallback
+    dialog.addEventListener('keydown', e => {
+        if(e.key === 'Escape' && !nativeDialog){
+            e.preventDefault()
+            closeProjectDialog(dialog)
+        }
+    })
+
+    dialog.addEventListener('close', projectDialogClosed)
+});
