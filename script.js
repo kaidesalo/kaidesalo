@@ -46,17 +46,6 @@ window.matchMedia('(min-width: 701px)').addEventListener('change', e => {
 
 // projects
 const projects = {
-    atlas: {
-        title: 'Atlas',
-        type: 'Full Stack / Concept',
-        intro: 'A clearer view of complex data. A dashboard concept that turns geographic and operational information into an interface people can actually navigate.',
-        iamge: 'atlas.svg',
-        alt: 'Atlas geospatial analytics dashboard',
-        stack:['React', 'Typescript', 'PostgreSQL'],
-        challenge: 'Dense dashboards often bury the useful parts. Atlas explores a map-first workspace that brings context, filters, and essential metrics together without overwhelming the screen.',
-        approach: ['A responsive workspace with a consistent hierarchy across charts, maps, and detail panels.', 'Composable interface components and explicit loading, empty, and error states.', 'An API and data model designed around filtering and progressive disclosure.'],
-        focus: 'Data Visualization · Interface Architecture · Full Stack Design'
-    },
     orbit: {
         title: 'Orbit',
         type: 'Dev Tools / Concept',
