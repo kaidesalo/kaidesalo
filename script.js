@@ -68,16 +68,16 @@ const projects = {
         approach: ['Write a one-page scope covering audience, core job, and v1 boundaries.', 'Scaffold a bare Teams app and sideload it in a dev tenant.', 'Build the smallest version of the core flow from the scope.'],
         focus: 'Scoping · Platform Setup · Teams Integration'
     },
-    folio: {
-        title: 'Folio',
-        type: 'Creative Dev / Concept',
-        intro: 'A digital space with a point of view. An editorial portfolio concept that pairs expressive typography with a fast, accessible browsing experience.',
-        image: 'folio.svg',
-        alt: 'Folio editorial website concept',
-        stack:['Next.js', 'CSS', 'Motion design'],
-        challenge: 'Creative websites should feel distinctive while remaining easy to use. Folio explores how typography, structure, and restrained motion can give work a memorable setting.',
-        approach: ['An adaptable layout system that gives each project enough room to tell its story.', 'Responsive typography and lightweight interactions with reduced-motion support.', 'Semantic page structure and a focus on image loading, legibility, and keyboard access.'],
-        focus: 'Front End Craft · Accessibility · Performance'
+    kitbook: {
+        title: 'Kitbook',
+        type: 'Fintech / Concept',
+        intro: 'A personal finance tracker concept that turns everyday spending into a clear, friendly picture of where your money goes, with a small origami fox keeping watch.',
+        image: 'kitbook.svg',
+        alt: 'Kitbook personal finance dashboard concept mockup; all figures are sample data',
+        stack:['React', 'TypeScript', 'D3.js', 'Node.js', 'PostgreSQL'],
+        challenge: 'Budgeting tools tend to either bury people in spreadsheets or nag them with alerts. Kitbook explores how one calm overview (a balance, a monthly budget, spending by category, and a savings goal) can make money feel manageable instead of stressful.',
+        approach: ['A one-screen overview that answers the everyday questions first: how much is left, where it went, and whether a goal is on track.', 'Charts built with D3 and paired with plain-text labels and totals, so no figure is conveyed by color alone.', 'A typed data model for accounts, transactions, and budgets in PostgreSQL, shaped for fast monthly roll-ups.'],
+        focus: 'Data Visualization · Product Design · Accessibility'
     },
 };
 

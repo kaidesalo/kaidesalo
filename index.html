@@ -221,10 +221,10 @@
                             </button>
                         </article>
                         <article class="project" data-category="web">
-                            
-                            <button class="project-open" data-dialog="folio-dialog" aria-haspopup="dialog" aria-controls="folio-dialog" aria-label="explore folio project">
-                                <div class="project-image atlas-image">
-                                    <img src="assets/folio.svg" alt="Folio editorial website with a lavender palette and large typography" width="1400" height="1000" loading="lazy">
+
+                            <button class="project-open" data-dialog="kitbook-dialog" aria-haspopup="dialog" aria-controls="kitbook-dialog" aria-label="explore kitbook project">
+                                <div class="project-image">
+                                    <img src="assets/kitbook.svg" alt="Kitbook concept mockup: a fox-themed personal finance dashboard with a balance, spending by category, and a savings goal; all figures are sample data" width="1400" height="1000" loading="lazy">
                                     <span class="project-view">Explore Project 
                                         <span>
                                             <svg class="arrow-svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4">
@@ -236,18 +236,24 @@
                                 </div>
                                 <div>
                                     <div class="project-caption">
-                                        <h3>Folio</h3>
-                                        <p>A little less noise. A lot more character.</p>
+                                        <div>
+                                            <h3>Kitbook</h3>
+                                            <p>A fox-themed personal finance tracker concept that shows your balance, budget, and spending at a glance.</p>
+                                        </div>
+                                        <div class="project-meta">
+                                            <span>Fintech &middot; Concept</span>
+                                        </div>
+                                        <span class="project-arrow" aria-hidden="true">
+                                            <svg class="arrow-svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4">
+                                                <path d="M5 19 19 5M5 5h14v14"/>
+                                            </svg>
+                                        </span>
                                     </div>
-                                    <span class="project-arrow" aria-hidden="true">
-                                        <svg class="arrow-svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4">
-                                            <path d="M5 19 19 5M5 5h14v14"/>
-                                        </svg>
-                                    </span>
                                 </div>
                                 <div class="project-tags">
-                                    <span>Creative Development</span>
-                                    <span>Next.js / Motion</span>
+                                    <span>Personal Finance</span>
+                                    <span>Data Viz</span>
+                                    <span>Concept</span>
                                 </div>
                     
                             </button>
@@ -404,37 +410,38 @@
             <p class="detail-note">Screenshots, repo, and demo links will be added once the scaffold is running.</p>
         </div>
     </dialog>
-    <dialog id="folio-dialog" class="project-dialog" aria-labelledby="folio-title">
+    <dialog id="kitbook-dialog" class="project-dialog" aria-labelledby="kitbook-title">
         <div class="dialog-toolbar">
             <span class="eyebrow">Project 03 / 03</span>
             <button type="button" class="close-dialog" aria-label="close project details">Close <span aria-hidden="true">&times;</span></button>
         </div>
         <div class="detail-content">
-            <p class="detail-kicker">Creative Dev &middot; Concept</p>
-            <h2 id="folio-title">Folio</h2>
-            <p class="detail-intro">A digital space with a point of view. An editorial portfolio concept that pairs expressive typography with a fast, accessible browsing experience.</p>
-            <img class="detail-image" src="assets/folio.svg" alt="Folio editorial website concept" width="1400" height="1000" loading="lazy">
+            <p class="detail-kicker">Fintech &middot; Concept</p>
+            <h2 id="kitbook-title">Kitbook</h2>
+            <p class="detail-intro">A personal finance tracker concept that turns everyday spending into a clear, friendly picture of where your money goes, with a small origami fox keeping watch.</p>
+            <img class="detail-image" src="assets/kitbook.svg" alt="Kitbook dashboard concept mockup with a total balance, spending-by-category donut chart, monthly budget bar, recent transactions, and an origami fox beside a savings goal; all figures are sample data" width="1400" height="1000" loading="lazy">
             <div class="detail-grid">
                 <h3>Stack</h3>
-                <div><p>Next.js, CSS, Motion design</p></div>
+                <div><p>React, TypeScript, D3.js, Node.js, PostgreSQL (concept stack)</p></div>
 
                 <h3>Overview</h3>
                 <div>
-                    <p>Creative websites should feel distinctive while remaining easy to use. Folio explores how typography, structure, and restrained motion can give work a memorable setting.</p>
+                    <p>Budgeting tools tend to either bury people in spreadsheets or nag them with alerts. Kitbook explores how one calm overview (a balance, a monthly budget, spending by category, and a savings goal) can make money feel manageable instead of stressful.</p>
                 </div>
 
                 <h3>Approach</h3>
                 <div>
                     <ul>
-                        <li>An adaptable layout system that gives each project enough room to tell its story.</li>
-                        <li>Responsive typography and lightweight interactions with reduced-motion support.</li>
-                        <li>Semantic page structure and a focus on image loading, legibility, and keyboard access.</li>
+                        <li>A one-screen overview that answers the everyday questions first: how much is left, where it went, and whether a goal is on track.</li>
+                        <li>Charts built with D3 and paired with plain-text labels and totals, so no figure is conveyed by color alone.</li>
+                        <li>A typed data model for accounts, transactions, and budgets in PostgreSQL, shaped for fast monthly roll-ups.</li>
                     </ul>
                 </div>
 
                 <h3>Focus</h3>
-                <div><p>Front End Craft &middot; Accessibility &middot; Performance</p></div>
+                <div><p>Data Visualization &middot; Product Design &middot; Accessibility</p></div>
             </div>
+            <p class="detail-note">Kitbook is a concept project. The dashboard above is a design mockup, and every figure in it is sample data.</p>
         </div>
     </dialog>
     
