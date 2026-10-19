@@ -57,16 +57,16 @@ const projects = {
         approach: ['Wire Scryfall search and render a clean results list.', 'Sort and filter results by color and set.', 'Polish empty, loading, and error states plus the mobile layout.'],
         focus: 'API Integration · Front End Sorting · Usable Scope'
     },
-    orbit: {
-        title: 'Orbit',
-        type: 'Dev Tools / Concept',
-        intro: 'One place to find your flow. A developer workspace concept for keeping projects, activity, and everyday commands within reach.',
-        image: 'orbit.svg',
-        alt: 'Orbit developer workspace',
-        stack:['TypeScript', 'Node.js', 'CLI design'],
-        challenge: 'Switching between tools interrupts focus. Orbit explores a compact workspace that puts project context and routine actions in one predictable place.',
-        approach: ['A keyboard-first interaction model with discoverable commands.', 'Readable terminal output and clear status feedback for everyday tasks.', 'A modular command architecture that makes new workflows straightforward to add.'],
-        focus: 'Developer Experience · Command Design · Tooling'
+    foxforge: {
+        title: 'Foxforge',
+        type: 'Personal / In Progress',
+        intro: 'A Microsoft Teams app I\'m scoping and scaffolding, built to live where conversations already happen.',
+        image: 'foxforge-placeholder.svg',
+        alt: 'Foxforge placeholder artwork, screenshots coming once the scaffold is running',
+        stack:['Microsoft Teams', 'Teams Toolkit', 'TypeScript', 'Node.js'],
+        challenge: 'Foxforge is a project I\'ve put off for a while. The first version starts with the basics: a written scope that defines who it\'s for and what v1 does, plus a bare Teams app that installs and runs end to end.',
+        approach: ['Write a one-page scope covering audience, core job, and v1 boundaries.', 'Scaffold a bare Teams app and sideload it in a dev tenant.', 'Build the smallest version of the core flow from the scope.'],
+        focus: 'Scoping · Platform Setup · Teams Integration'
     },
     folio: {
         title: 'Folio',
