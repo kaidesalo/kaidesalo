@@ -98,7 +98,7 @@ document.querySelectorAll('.filter').forEach(button =>
             
             if(!project.hidden){
                 void project.offsetWidth
-                project.classList.add(filtering)
+                project.classList.add('filtering')
             }
         })
     })
