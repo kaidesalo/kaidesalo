@@ -46,6 +46,17 @@ window.matchMedia('(min-width: 701px)').addEventListener('change', e => {
 
 // projects
 const projects = {
+    manaden: {
+        title: 'ManaDen',
+        type: 'Personal / In Progress',
+        intro: 'A small web app for searching Magic: The Gathering cards and sorting them by color and set.',
+        iamge: 'manaden-placeholder.svg',
+        alt: 'ManaDen placeholder artwork, screenshots coming with the first build',
+        stack:['Scryfall API', 'HTML', 'CSS', 'JavaScript'],
+        challenge: 'A pile of card names is hard to browse. ManaDen keeps the first version intentionally small: look up cards through the Scryfall API, then organize results by color and set so they become something you can actually scan.',
+        approach: ['Wire Scryfall search and render a clean results list.', 'Sort and filter results by color and set.', 'Polish empty, loading, and error states plus the mobile layout.'],
+        focus: 'API Integration · Front End Sorting · Usable Scope'
+    },
     orbit: {
         title: 'Orbit',
         type: 'Dev Tools / Concept',
