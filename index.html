@@ -184,9 +184,9 @@
                         </article>
                         <article class="project" data-category="tools">
 
-                            <button class="project-open" data-project="orbit" aria-label="explore orbit project">
-                                <div class="project-image atlas-image">
-                                    <img src="assets/orbit.svg" alt="Orbit developer workspace in a dark interface with yellow accents" width="1400" height="1000" loading="lazy">
+                            <button class="project-open" data-dialog="foxforge-dialog" aria-haspopup="dialog" aria-controls="foxforge-dialog" aria-label="explore foxforge project">
+                                <div class="project-image">
+                                    <img src="assets/foxforge-placeholder.svg" alt="Placeholder for Foxforge, a Microsoft Teams app; screenshots will be added once the scaffold is running" width="1200" height="900" loading="lazy">
                                     <span class="project-view">Explore Project 
                                         <span>
                                             <svg class="arrow-svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4">
@@ -198,18 +198,24 @@
                                 </div>
                                 <div>
                                     <div class="project-caption">
-                                        <h3>Orbit</h3>
-                                        <p>A calmer workflow for developers.</p>
+                                        <div>
+                                            <h3>Foxforge</h3>
+                                            <p>A Microsoft Teams app I&rsquo;ve been meaning to start for a while. First step is a written scope and a bare app scaffold, then building from there.</p>
+                                        </div>
+                                        <div class="project-meta">
+                                            <span>Personal &middot; In progress</span>
+                                        </div>
+                                        <span class="project-arrow" aria-hidden="true">
+                                            <svg class="arrow-svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4">
+                                                <path d="M5 19 19 5M5 5h14v14"/>
+                                            </svg>
+                                        </span>
                                     </div>
-                                    <span class="project-arrow" aria-hidden="true">
-                                        <svg class="arrow-svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4">
-                                            <path d="M5 19 19 5M5 5h14v14"/>
-                                        </svg>
-                                    </span>
                                 </div>
                                 <div class="project-tags">
-                                    <span>Developer Tools</span>
-                                    <span>Typescript / Node.js</span>
+                                    <span>Microsoft Teams</span>
+                                    <span>TypeScript</span>
+                                    <span>In progress</span>
                                 </div>
                     
                             </button>
@@ -356,6 +362,46 @@
                 </div>
             </div>
             <p class="detail-note">Screenshots, repo, and demo links will be added when the first build is live.</p>
+        </div>
+    </dialog>
+    <dialog id="foxforge-dialog" class="project-dialog" aria-labelledby="foxforge-title">
+        <div class="dialog-toolbar">
+            <span class="eyebrow">Project 02 / 03</span>
+            <button type="button" class="close-dialog" aria-label="close project details">Close <span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="detail-content">
+            <p class="detail-kicker">Personal project &middot; Microsoft Teams</p>
+            <h2 id="foxforge-title">Foxforge</h2>
+            <p class="detail-intro">A Microsoft Teams app I&rsquo;m scoping and scaffolding, built to live where conversations already happen.</p>
+            <img class="detail-image" src="assets/foxforge-placeholder.svg" alt="Placeholder for Foxforge, a Microsoft Teams app; screenshots will be added once the scaffold is running" width="1200" height="900" loading="lazy">
+            <div class="detail-grid">
+                <h3>Role</h3>
+                <div><p>Solo designer/developer</p></div>
+
+                <h3>Stack</h3>
+                <div><p>Microsoft Teams; Teams Toolkit, TypeScript, Node.js (planned)</p></div>
+
+                <h3>Status</h3>
+                <div><p>In progress</p></div>
+
+                <h3>Overview</h3>
+                <div>
+                    <p>Foxforge is a Microsoft Teams app I&rsquo;ve been putting off for longer than I&rsquo;d like to admit. Rather than wait for the perfect plan, I&rsquo;m starting small: write down what it should do, then get a bare app running inside Teams.</p>
+                    <p>The first milestone is deliberately unglamorous: a written scope covering who it&rsquo;s for, the one job it needs to do well, and what&rsquo;s out of scope for v1, plus a minimal Teams scaffold that installs and runs end to end.</p>
+                    <p>I&rsquo;m building it as a portfolio piece and a way to learn how Teams apps are put together: the manifest, sideloading, and the platform&rsquo;s conventions.</p>
+                </div>
+
+                <h3>Next</h3>
+                <div>
+                    <ul>
+                        <li>Write a one-page scope: audience, core job, v1 boundaries</li>
+                        <li>Scaffold a bare Teams app and sideload it in a dev tenant</li>
+                        <li>Build the smallest version of the core flow from the scope</li>
+                        <li>Publish the repo, then add screenshots here</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="detail-note">Screenshots, repo, and demo links will be added once the scaffold is running.</p>
         </div>
     </dialog>
     
