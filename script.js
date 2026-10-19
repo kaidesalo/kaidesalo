@@ -46,14 +46,14 @@ window.matchMedia('(min-width: 701px)').addEventListener('change', e => {
 
 // projects
 const projects = {
-    manaden: {
-        title: 'ManaDen',
+    spellbranch: {
+        title: 'Spellbranch',
         type: 'Personal / In Progress',
         intro: 'A small web app for searching Magic: The Gathering cards and sorting them by color and set.',
-        image: 'manaden.svg',
-        alt: 'Concept mockup of ManaDen, a card search page with filters, a color-sorted card grid, and a collection sidebar',
+        image: 'spellbranch.svg',
+        alt: 'Concept mockup of Spellbranch, a card search page with filters, a color-sorted card grid, and a collection sidebar',
         stack:['Scryfall API', 'HTML', 'CSS', 'JavaScript'],
-        challenge: 'A pile of card names is hard to browse. ManaDen keeps the first version intentionally small: look up cards through the Scryfall API, then organize results by color and set so they become something you can actually scan.',
+        challenge: 'A pile of card names is hard to browse. Spellbranch keeps the first version intentionally small: look up cards through the Scryfall API, then organize results by color and set so they become something you can actually scan.',
         approach: ['Wire Scryfall search and render a clean results list.', 'Sort and filter results by color and set.', 'Polish empty, loading, and error states plus the mobile layout.'],
         focus: 'API Integration · Front End Sorting · Usable Scope'
     },
