@@ -57,7 +57,7 @@
 
     </header>
     <div class="mobile-menu" id="mobile-menu" hidden>
-        <a href="#work" class="mobile-work">Selcted Work 
+        <a href="#work" class="mobile-work">Selected Work 
             <svg class="arrow-svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4">
                 <path d="M5 19 19 5M5 5h14v14"/>
             </svg>
@@ -107,7 +107,7 @@
                     <p>
                         I'm Kaide, a software engineer turning
                         <br class="desktop-break"> 
-                        complex problems into intuituve digital experiences.
+                        complex problems into intuitive digital experiences.
                     </p>
                     <span class="hero-index">
                         SCROLL TO EXPLORE
@@ -222,7 +222,7 @@
                         </article>
                         <article class="project" data-category="web">
                             
-                            <button class="project-open" data-project="folio" aria-label="explore folio project">
+                            <button class="project-open" data-dialog="folio-dialog" aria-haspopup="dialog" aria-controls="folio-dialog" aria-label="explore folio project">
                                 <div class="project-image atlas-image">
                                     <img src="assets/folio.svg" alt="Folio editorial website with a lavender palette and large typography" width="1400" height="1000" loading="lazy">
                                     <span class="project-view">Explore Project 
@@ -402,6 +402,39 @@
                 </div>
             </div>
             <p class="detail-note">Screenshots, repo, and demo links will be added once the scaffold is running.</p>
+        </div>
+    </dialog>
+    <dialog id="folio-dialog" class="project-dialog" aria-labelledby="folio-title">
+        <div class="dialog-toolbar">
+            <span class="eyebrow">Project 03 / 03</span>
+            <button type="button" class="close-dialog" aria-label="close project details">Close <span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="detail-content">
+            <p class="detail-kicker">Creative Dev &middot; Concept</p>
+            <h2 id="folio-title">Folio</h2>
+            <p class="detail-intro">A digital space with a point of view. An editorial portfolio concept that pairs expressive typography with a fast, accessible browsing experience.</p>
+            <img class="detail-image" src="assets/folio.svg" alt="Folio editorial website concept" width="1400" height="1000" loading="lazy">
+            <div class="detail-grid">
+                <h3>Stack</h3>
+                <div><p>Next.js, CSS, Motion design</p></div>
+
+                <h3>Overview</h3>
+                <div>
+                    <p>Creative websites should feel distinctive while remaining easy to use. Folio explores how typography, structure, and restrained motion can give work a memorable setting.</p>
+                </div>
+
+                <h3>Approach</h3>
+                <div>
+                    <ul>
+                        <li>An adaptable layout system that gives each project enough room to tell its story.</li>
+                        <li>Responsive typography and lightweight interactions with reduced-motion support.</li>
+                        <li>Semantic page structure and a focus on image loading, legibility, and keyboard access.</li>
+                    </ul>
+                </div>
+
+                <h3>Focus</h3>
+                <div><p>Front End Craft &middot; Accessibility &middot; Performance</p></div>
+            </div>
         </div>
     </dialog>
     
