@@ -148,7 +148,7 @@
 
                             <button class="project-open" data-dialog="spellbranch-dialog" aria-haspopup="dialog" aria-controls="spellbranch-dialog" aria-label="explore spellbranch project">
                                 <div class="project-image">
-                                    <img src="assets/spellbranch.svg" alt="Concept mockup of Spellbranch, a Magic: The Gathering card search page with color, type, set, and CMC filters, a color-sorted grid of made-up cards, and a collection sidebar" width="1400" height="1000" loading="lazy">
+                                    <img class="is-screenshot" src="assets/spellbranch/deck-detail.webp" alt="Screenshot of Spellbranch&rsquo;s deck page: a Gruul Stompy deck with its branches, Scryfall card search, and the deck list grouped by card type" width="1600" height="1000" loading="lazy">
                                     <span class="project-view">Explore Project 
                                         <span>
                                             <svg class="arrow-svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4">
@@ -162,7 +162,7 @@
                                     <div class="project-caption">
                                         <div>
                                             <h3>Spellbranch</h3>
-                                            <p>A compact MTG card search page that sorts results by color and set via the Scryfall API. First version in progress.</p>
+                                            <p>A social MTG deck builder with Scryfall card search, where friends can fork a deck into branches and compare every change. In progress.</p>
                                         </div>
                                         <div class="project-meta">
                                             <span>Personal &middot; In progress</span>
@@ -338,37 +338,54 @@
         <div class="detail-content">
             <p class="detail-kicker">Personal project &middot; Web</p>
             <h2 id="spellbranch-title">Spellbranch</h2>
-            <p class="detail-intro">A small web app for searching Magic: The Gathering cards and sorting them by color and set.</p>
-            <img class="detail-image" src="assets/spellbranch.svg" alt="Concept mockup of Spellbranch: a search bar, color identity, type, set, and CMC filters, sort-by controls, a grid of made-up cards grouped by color, and a collection and deck count sidebar" width="1400" height="1000" loading="lazy">
-            <p class="detail-caption">Concept image</p>
+            <p class="detail-intro">A web app for building Magic: The Gathering decks with friends: search cards, fork a deck into branches, and compare every change.</p>
+            <img class="detail-image is-screenshot" src="assets/spellbranch/deck-detail.webp" alt="Screenshot of Spellbranch&rsquo;s deck page: the Gruul Stompy deck with tags, a branch link, a Scryfall card search for Embercleave with a card preview and Add card button, and the deck list grouped by card type with quantity controls" width="1600" height="1000" loading="lazy">
+            <p class="detail-caption">Screenshot &middot; Deck page</p>
+            <div class="detail-gallery">
+                <figure>
+                    <a href="assets/spellbranch/landing.webp" target="_blank" rel="noopener"><img src="assets/spellbranch/landing.webp" alt="Screenshot of the Spellbranch landing page: the headline &lsquo;Build decks with friends. Fork ideas. Compare every change.&rsquo; beside a branch view panel listing card changes" width="1600" height="1000" loading="lazy"></a>
+                    <figcaption>Landing page</figcaption>
+                </figure>
+                <figure>
+                    <a href="assets/spellbranch/compare.webp" target="_blank" rel="noopener"><img src="assets/spellbranch/compare.webp" alt="Screenshot of Spellbranch&rsquo;s compare view: the Gruul Stompy source list beside a friend&rsquo;s branch, with added, removed, quantity, and replaced card counts and a table of card changes" width="1600" height="1000" loading="lazy"></a>
+                    <figcaption>Branch compare</figcaption>
+                </figure>
+                <figure>
+                    <a href="assets/spellbranch/dashboard.webp" target="_blank" rel="noopener"><img src="assets/spellbranch/dashboard.webp" alt="Screenshot of the Spellbranch dashboard with deck, branch, and friend counts and two deck cards, Boros Burn and Gruul Stompy" width="1600" height="1000" loading="lazy"></a>
+                    <figcaption>Dashboard</figcaption>
+                </figure>
+                <figure>
+                    <a href="assets/spellbranch/mobile.webp" target="_blank" rel="noopener"><img src="assets/spellbranch/mobile.webp" alt="Two mobile screenshots of Spellbranch side by side: the dashboard and the branch compare view" width="1600" height="1000" loading="lazy"></a>
+                    <figcaption>Mobile</figcaption>
+                </figure>
+            </div>
             <div class="detail-grid">
                 <h3>Role</h3>
                 <div><p>Solo designer/developer</p></div>
 
                 <h3>Stack</h3>
-                <div><p>Scryfall API; HTML, CSS, JavaScript</p></div>
+                <div><p>Next.js, React, TypeScript, Tailwind CSS, shadcn/ui, Supabase; Scryfall API</p></div>
 
                 <h3>Status</h3>
                 <div><p>In progress</p></div>
 
                 <h3>Overview</h3>
                 <div>
-                    <p>Spellbranch is a Magic: The Gathering card-sorting webpage I&rsquo;ve been meaning to ship for a while. The first version stays intentionally small: look up cards, then organize results by color and set so a pile of names becomes something you can actually browse.</p>
-                    <p>It leans on the Scryfall API for card search and canonical card data, then applies simple front-end sorting for color and set. The goal is a clear, usable tool, not a full collection manager, so the core loop stays search, sort, scan.</p>
-                    <p>I&rsquo;m building it as a personal portfolio piece and a daily-driver for my own card lists. Scope for v1 is the search-and-sort flow; extras can wait until that path feels solid.</p>
+                    <p>Spellbranch is a Magic: The Gathering deck builder I&rsquo;ve been meaning to ship for a while. It started as a card-sorting page and grew into a place to build decks with friends: search cards, put a list together, and share it publicly or with friends only.</p>
+                    <p>The core idea is branching. A friend can fork your deck and try their own cuts, then you compare the branch against the source side by side, with added, removed, and replaced cards called out, so game-night experiments never overwrite the original list. Card search and canonical card data come from the Scryfall API; accounts and decks live in Supabase.</p>
+                    <p>I&rsquo;m building it as a personal portfolio piece and a daily driver for my own decks. The repo is private for now while I finish the first public version.</p>
                 </div>
 
                 <h3>Next</h3>
                 <div>
                     <ul>
-                        <li>Wire Scryfall search and render a clean results list</li>
-                        <li>Sort and filter by color and set</li>
-                        <li>Polish empty, loading, and error states plus mobile layout</li>
-                        <li>Publish the repo and a live demo, then add screenshots here</li>
+                        <li>Polish empty, loading, and error states plus the mobile layout</li>
+                        <li>Deploy a live demo</li>
+                        <li>Make the repo public once the first version is ready</li>
                     </ul>
                 </div>
             </div>
-            <p class="detail-note">The image above is a concept mockup. Screenshots, the repo, and a live demo will be added once the first build is live.</p>
+            <p class="detail-note">Screenshots are from a local development build using demo accounts. The repo is private for now, and a live demo is coming soon.</p>
         </div>
     </dialog>
     <dialog id="foxforge-dialog" class="project-dialog" aria-labelledby="foxforge-title">

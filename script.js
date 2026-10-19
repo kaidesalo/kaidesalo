@@ -49,13 +49,13 @@ const projects = {
     spellbranch: {
         title: 'Spellbranch',
         type: 'Personal / In Progress',
-        intro: 'A small web app for searching Magic: The Gathering cards and sorting them by color and set.',
-        image: 'spellbranch.svg',
-        alt: 'Concept mockup of Spellbranch, a card search page with filters, a color-sorted card grid, and a collection sidebar',
-        stack:['Scryfall API', 'HTML', 'CSS', 'JavaScript'],
-        challenge: 'A pile of card names is hard to browse. Spellbranch keeps the first version intentionally small: look up cards through the Scryfall API, then organize results by color and set so they become something you can actually scan.',
-        approach: ['Wire Scryfall search and render a clean results list.', 'Sort and filter results by color and set.', 'Polish empty, loading, and error states plus the mobile layout.'],
-        focus: 'API Integration · Front End Sorting · Usable Scope'
+        intro: 'A web app for building Magic: The Gathering decks with friends: search cards, fork a deck into branches, and compare every change.',
+        image: 'spellbranch/deck-detail.webp',
+        alt: 'Screenshot of Spellbranch\'s deck page with branches, Scryfall card search, and the deck list',
+        stack:['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'shadcn/ui', 'Supabase', 'Scryfall API'],
+        challenge: 'Trying a new idea in a shared deck usually means overwriting the original list. Spellbranch lets friends fork a deck into branches and compare each branch against the source side by side, with card search and data from the Scryfall API.',
+        approach: ['Search cards through the Scryfall API and build lists by card type.', 'Fork decks into branches and compare them with added, removed, and replaced cards called out.', 'Share decks publicly or with friends only, with accounts and data in Supabase.'],
+        focus: 'Collaboration · Version Comparison · API Integration'
     },
     foxforge: {
         title: 'Foxforge',
