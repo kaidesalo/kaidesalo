@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f3eee5"/><stop offset="1" stop-color="#e3d8c8"/></linearGradient><linearGradient id="fur" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f39a4d"/><stop offset="1" stop-color="#e2582f"/></linearGradient><linearGradient id="bar" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#f29a52"/><stop offset="1" stop-color="#ec4e31"/></linearGradient><filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feGaussianBlur in="SourceAlpha" stdDeviation="30" result="blur"/><feOffset in="blur" dx="0" dy="28" result="offset"/><feFlood flood-color="#6b5136" flood-opacity=".22"/><feComposite in2="offset" operator="in" result="shadow"/><feMerge><feMergeNode in="shadow"/><feMergeNode in="SourceGraphic"/></feMerge></filter><clipPath id="frame"><rect x="150" y="128" width="1100" height="744" rx="16"/></clipPath></defs>
+<rect width="1400" height="1000" fill="url(#bg)"/>
+<circle cx="1260" cy="120" r="430" fill="none" stroke="#ec4e31" stroke-opacity=".08"/><circle cx="1260" cy="120" r="500" fill="none" stroke="#ec4e31" stroke-opacity=".06"/>
+<g transform="rotate(-2 700 500)" filter="url(#shadow)">
+<rect x="150" y="128" width="1100" height="744" rx="16" fill="#faf8f3"/>
+<g clip-path="url(#frame)">
+<!-- browser bar -->
+<rect x="150" y="128" width="1100" height="42" fill="#ebe5da"/><g fill="#c9bfae"><circle cx="174" cy="149" r="4.5"/><circle cx="190" cy="149" r="4.5"/><circle cx="206" cy="149" r="4.5"/></g><rect x="560" y="137" width="280" height="24" rx="6" fill="#f6f2ea"/><text x="700" y="153" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#9a8f80">kitbook / overview</text>
+<!-- sidebar -->
+<rect x="150" y="170" width="214" height="702" fill="#242522"/>
+<g transform="translate(176 196) scale(.5)" fill="#ec4e31"><path d="M6 5 27 18 15 31Z"/><path d="M58 5 37 18 49 31Z" opacity=".8"/><path d="M27 18H37L49 31 32 43 15 31Z"/><path d="M6 5 15 31 32 43 12 37Z" opacity=".68"/><path d="M58 5 49 31 32 43 52 37Z" opacity=".88"/><path d="M12 37 32 43V59Z" opacity=".82"/><path d="M52 37 32 43V59Z" opacity=".6"/></g>
+<text x="216" y="221" fill="#f5f4ef" font-family="Arial,sans-serif" font-size="23" font-weight="700" letter-spacing="-1">kitbook</text>
+<text x="178" y="272" fill="#7d7e76" font-family="Arial,sans-serif" font-size="10" letter-spacing="1.6">MY MONEY</text>
+<rect x="166" y="286" width="182" height="38" rx="8" fill="#3a3b36"/><rect x="166" y="286" width="4" height="38" rx="2" fill="#ec4e31"/>
+<g font-family="Arial,sans-serif" font-size="14"><text x="214" y="310" fill="#f5f4ef" font-weight="700">Overview</text><g fill="#a5a69d"><text x="214" y="358">Transactions</text><text x="214" y="400">Budgets</text><text x="214" y="442">Goals</text><text x="214" y="484">Accounts</text></g></g>
+<g fill="none" stroke="#a5a69d" stroke-width="1.6"><rect x="184" y="298" width="14" height="14" rx="3" stroke="#f29a52"/><path d="M184 347H198M184 352H198M184 357H194"/><circle cx="191" cy="395" r="7"/><path d="M191 388V395H198"/><circle cx="191" cy="437" r="7"/><circle cx="191" cy="437" r="2.5"/><rect x="184" y="473" width="14" height="11" rx="2"/></g>
+<rect x="166" y="780" width="182" height="70" rx="10" fill="#33342f"/><text x="182" y="806" fill="#f29a52" font-family="Arial,sans-serif" font-size="10" letter-spacing="1.6">CONCEPT MOCKUP</text><text x="182" y="830" fill="#a5a69d" font-family="Arial,sans-serif" font-size="12">All figures are sample data</text>
+<!-- header -->
+<text x="396" y="222" fill="#8a8b83" font-family="Arial,sans-serif" font-size="11" letter-spacing="1.8">TOTAL BALANCE · OCTOBER</text>
+<text x="394" y="280" fill="#242522" font-family="Georgia,'Times New Roman',serif" font-size="56" letter-spacing="-2">$12,486<tspan fill="#a5a69d" font-size="34">.20</tspan></text>
+<rect x="680" y="246" width="168" height="30" rx="15" fill="#fbe3d9"/><text x="764" y="266" text-anchor="middle" fill="#c63b22" font-family="Arial,sans-serif" font-size="12" font-weight="700">▲ $412.60 this month</text>
+<rect x="958" y="208" width="120" height="38" rx="19" fill="none" stroke="#d7d8cf"/><text x="984" y="232" fill="#242522" font-family="Arial,sans-serif" font-size="13">Oct 2026 ▾</text>
+<rect x="1092" y="208" width="126" height="38" rx="19" fill="#ec4e31"/><text x="1155" y="232" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="13" font-weight="700">+ Add expense</text>
+<!-- spending donut card -->
+<rect x="394" y="312" width="404" height="258" rx="14" fill="#fff" stroke="#e7e2d8"/>
+<text x="418" y="345" fill="#242522" font-family="Arial,sans-serif" font-size="15" font-weight="700">Spending by category</text>
+<g transform="translate(500 460) rotate(-90)" fill="none" stroke-width="24">
+<circle r="68" stroke="#ec4e31" stroke-dasharray="159.4 427.3"/>
+<circle r="68" stroke="#f29a52" stroke-dasharray="90 427.3" stroke-dashoffset="-162.4"/>
+<circle r="68" stroke="#e6c49d" stroke-dasharray="56.8 427.3" stroke-dashoffset="-255.4"/>
+<circle r="68" stroke="#3a3b36" stroke-dasharray="48.3 427.3" stroke-dashoffset="-315.2"/>
+<circle r="68" stroke="#b9bab1" stroke-dasharray="56.8 427.3" stroke-dashoffset="-366.5"/>
+</g>
+<text x="500" y="460" text-anchor="middle" fill="#242522" font-family="Georgia,serif" font-size="24">$2,840</text><text x="500" y="480" text-anchor="middle" fill="#8a8b83" font-family="Arial,sans-serif" font-size="11">spent</text>
+<g font-family="Arial,sans-serif" font-size="13" fill="#4a4b45">
+<rect x="606" y="384" width="10" height="10" rx="3" fill="#ec4e31"/><text x="626" y="394">Housing</text><text x="776" y="394" text-anchor="end" fill="#242522" font-weight="700">38%</text>
+<rect x="606" y="418" width="10" height="10" rx="3" fill="#f29a52"/><text x="626" y="428">Groceries</text><text x="776" y="428" text-anchor="end" fill="#242522" font-weight="700">22%</text>
+<rect x="606" y="452" width="10" height="10" rx="3" fill="#e6c49d"/><text x="626" y="462">Transport</text><text x="776" y="462" text-anchor="end" fill="#242522" font-weight="700">14%</text>
+<rect x="606" y="486" width="10" height="10" rx="3" fill="#3a3b36"/><text x="626" y="496">Dining out</text><text x="776" y="496" text-anchor="end" fill="#242522" font-weight="700">12%</text>
+<rect x="606" y="520" width="10" height="10" rx="3" fill="#b9bab1"/><text x="626" y="530">Everything else</text><text x="776" y="530" text-anchor="end" fill="#242522" font-weight="700">14%</text>
+</g>
+<!-- budget card -->
+<rect x="818" y="312" width="400" height="258" rx="14" fill="#fff" stroke="#e7e2d8"/>
+<text x="842" y="345" fill="#242522" font-family="Arial,sans-serif" font-size="15" font-weight="700">October budget</text><text x="1194" y="345" text-anchor="end" fill="#8a8b83" font-family="Arial,sans-serif" font-size="12">12 days left</text>
+<text x="842" y="392" fill="#242522" font-family="Georgia,serif" font-size="30">$2,840 <tspan fill="#8a8b83" font-family="Arial,sans-serif" font-size="14">of $3,400</tspan></text>
+<rect x="842" y="410" width="352" height="14" rx="7" fill="#f0ebe2"/><rect x="842" y="410" width="296" height="14" rx="7" fill="url(#bar)"/><path d="M1124 404V430" stroke="#242522" stroke-width="1.5" stroke-dasharray="3 3"/>
+<text x="842" y="446" fill="#4a4b45" font-family="Arial,sans-serif" font-size="12"><tspan font-weight="700" fill="#242522">84% used</tspan> · $560 left to spend</text>
+<text x="842" y="480" fill="#8a8b83" font-family="Arial,sans-serif" font-size="10" letter-spacing="1.4">LAST 6 MONTHS</text>
+<g fill="#ece5d9"><rect x="852" y="502" width="34" height="42" rx="5"/><rect x="908" y="494" width="34" height="50" rx="5"/><rect x="964" y="510" width="34" height="34" rx="5"/><rect x="1020" y="498" width="34" height="46" rx="5"/><rect x="1076" y="506" width="34" height="38" rx="5"/></g><rect x="1132" y="488" width="34" height="56" rx="5" fill="#ec4e31"/>
+<g font-family="Arial,sans-serif" font-size="10" fill="#8a8b83" text-anchor="middle"><text x="869" y="560">May</text><text x="925" y="560">Jun</text><text x="981" y="560">Jul</text><text x="1037" y="560">Aug</text><text x="1093" y="560">Sep</text><text x="1149" y="560" fill="#242522" font-weight="700">Oct</text></g>
+<!-- transactions -->
+<rect x="394" y="590" width="510" height="262" rx="14" fill="#fff" stroke="#e7e2d8"/>
+<text x="418" y="623" fill="#242522" font-family="Arial,sans-serif" font-size="15" font-weight="700">Recent transactions</text><text x="880" y="623" text-anchor="end" fill="#ec4e31" font-family="Arial,sans-serif" font-size="12" font-weight="700">View all →</text>
+<g font-family="Arial,sans-serif">
+<path d="M418 642H880M418 694H880M418 746H880M418 798H880" stroke="#efeae1"/>
+<circle cx="438" cy="668" r="16" fill="#fdeee2"/><text x="438" y="673" text-anchor="middle" fill="#e07a33" font-size="13" font-weight="700">G</text><text x="466" y="664" fill="#242522" font-size="14" font-weight="700">Corner Grocer</text><text x="466" y="682" fill="#8a8b83" font-size="11">Groceries · Oct 18</text><text x="880" y="673" text-anchor="end" fill="#242522" font-size="14" font-weight="700">−$64.12</text>
+<circle cx="438" cy="720" r="16" fill="#e7efe3"/><text x="438" y="725" text-anchor="middle" fill="#4f7a52" font-size="13" font-weight="700">P</text><text x="466" y="716" fill="#242522" font-size="14" font-weight="700">Paycheck</text><text x="466" y="734" fill="#8a8b83" font-size="11">Income · Oct 15</text><text x="880" y="725" text-anchor="end" fill="#4f7a52" font-size="14" font-weight="700">+$2,150.00</text>
+<circle cx="438" cy="772" r="16" fill="#f3ece0"/><text x="438" y="777" text-anchor="middle" fill="#a2865d" font-size="13" font-weight="700">T</text><text x="466" y="768" fill="#242522" font-size="14" font-weight="700">City Transit Pass</text><text x="466" y="786" fill="#8a8b83" font-size="11">Transport · Oct 14</text><text x="880" y="777" text-anchor="end" fill="#242522" font-size="14" font-weight="700">−$45.00</text>
+<circle cx="438" cy="824" r="16" fill="#ececea"/><text x="438" y="829" text-anchor="middle" fill="#3a3b36" font-size="13" font-weight="700">E</text><text x="466" y="820" fill="#242522" font-size="14" font-weight="700">Ember Coffee Co.</text><text x="466" y="838" fill="#8a8b83" font-size="11">Dining out · Oct 13</text><text x="880" y="829" text-anchor="end" fill="#242522" font-size="14" font-weight="700">−$6.75</text>
+</g>
+<!-- savings goal with fox -->
+<rect x="924" y="590" width="294" height="262" rx="14" fill="#242522"/>
+<text x="948" y="623" fill="#f29a52" font-family="Arial,sans-serif" font-size="10" letter-spacing="1.6">SAVINGS GOAL</text>
+<text x="948" y="652" fill="#f5f4ef" font-family="Arial,sans-serif" font-size="18" font-weight="700">Winter trip fund</text>
+<text x="948" y="700" fill="#f5f4ef" font-family="Georgia,serif" font-size="32">$1,360</text><text x="948" y="722" fill="#a5a69d" font-family="Arial,sans-serif" font-size="12">of $2,000 · on track</text>
+<rect x="948" y="786" width="246" height="10" rx="5" fill="#3a3b36"/><rect x="948" y="786" width="167" height="10" rx="5" fill="url(#bar)"/>
+<text x="948" y="824" fill="#a5a69d" font-family="Arial,sans-serif" font-size="12"><tspan fill="#f5f4ef" font-weight="700">68%</tspan> saved · $40 a week</text>
+<!-- origami fox sitting on the progress bar -->
+<g transform="translate(1104 666)">
+<path d="M58 118C96 112 104 78 82 62L66 92Z" fill="url(#fur)"/><path d="M82 62C92 70 96 82 92 94L76 80Z" fill="#f5f4ef"/>
+<path d="M12 48 50 48 62 120H2Z" fill="#e2582f"/><path d="M31 52 46 120H16Z" fill="#f5f4ef" opacity=".95"/>
+<g transform="translate(0 0) scale(.97)"><path d="M6 5 27 18 15 31Z" fill="#f39a4d"/><path d="M58 5 37 18 49 31Z" fill="#e2582f"/><path d="M27 18H37L49 31 32 43 15 31Z" fill="#ec6a35"/><path d="M6 5 15 31 32 43 12 37Z" fill="#f5f4ef"/><path d="M58 5 49 31 32 43 52 37Z" fill="#ebe5da"/><path d="M12 37 32 43V59Z" fill="#f3ece0"/><path d="M52 37 32 43V59Z" fill="#d9d1c3"/><path d="M29 54 35 54 32 59Z" fill="#242522"/><circle cx="23" cy="30" r="2.2" fill="#242522"/><circle cx="41" cy="30" r="2.2" fill="#242522"/></g>
+</g>
+</g></g>
+<text x="152" y="930" font-family="Arial,sans-serif" font-size="12" letter-spacing="2.4" fill="#9a8a74">KITBOOK / MONEY, KEPT CLOSE.</text><text x="1248" y="930" text-anchor="end" font-family="Arial,sans-serif" font-size="12" letter-spacing="2.4" fill="#9a8a74">CONCEPT MOCKUP · SAMPLE DATA</text>
+</svg>
