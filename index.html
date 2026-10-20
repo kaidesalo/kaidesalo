@@ -188,7 +188,7 @@
 
                             <button class="project-open" data-dialog="cleanslate-dialog" aria-haspopup="dialog" aria-controls="cleanslate-dialog" aria-label="explore clean slate project">
                                 <div class="project-image">
-                                    <img src="assets/clean-slate.svg" alt="Placeholder title card for Clean Slate; screenshots coming soon" width="1400" height="1000" loading="lazy">
+                                    <img class="is-screenshot" src="assets/clean-slate/booking-times.webp" alt="Screenshot of Clean Slate&rsquo;s booking flow: the Available times step listing open appointment slots by day, with 10:00 AM selected" width="1600" height="1000" loading="lazy">
                                     <span class="project-view">Explore Project 
                                         <span>
                                             <svg class="arrow-svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4">
@@ -202,7 +202,7 @@
                                     <div class="project-caption">
                                         <div>
                                             <h3>Clean Slate</h3>
-                                            <p>A cleaning-service booking app with guest booking, availability-aware scheduling, and a staff dashboard. In progress.</p>
+                                            <p>A cleaning-service booking app that only shows staffable times.</p>
                                         </div>
                                         <div class="project-meta">
                                             <span>Booking &middot; In progress</span>
@@ -215,8 +215,8 @@
                                     </div>
                                 </div>
                                 <div class="project-tags">
-                                    <span>React</span>
-                                    <span>TypeScript</span>
+                                    <span>React 19</span>
+                                    <span>Supabase</span>
                                     <span>In progress</span>
                                 </div>
                     
@@ -399,14 +399,35 @@
             <p class="detail-kicker">Booking platform &middot; Web</p>
             <h2 id="cleanslate-title">Clean Slate</h2>
             <p class="detail-intro">A booking platform for a cleaning service: customers book as guests and only see times the team can actually staff, while staff run the schedule from a private dashboard.</p>
-            <img class="detail-image" src="assets/clean-slate.svg" alt="Placeholder title card for Clean Slate; screenshots coming soon" width="1400" height="1000" loading="lazy">
-            <p class="detail-caption">Placeholder image</p>
+            <img class="detail-image is-screenshot" src="assets/clean-slate/booking-times.webp" alt="Screenshot of Clean Slate&rsquo;s booking flow on the Time step: the step indicator (Service, Property, Price, Time, Contact, Review), a Deep Cleaning estimate of $335 for 4 hours, and open appointment slots grouped by day with 10:00 AM selected" width="1600" height="1000" loading="lazy">
+            <p class="detail-caption">Screenshot &middot; Booking: available times</p>
+            <div class="detail-gallery">
+                <figure>
+                    <a href="assets/clean-slate/landing.webp" target="_blank" rel="noopener"><img src="assets/clean-slate/landing.webp" alt="Screenshot of the Clean Slate landing page: the headline &lsquo;Book a spotless home on your schedule.&rsquo; with Book a cleaning and Manage appointment buttons" width="1600" height="1000" loading="lazy"></a>
+                    <figcaption>Landing page</figcaption>
+                </figure>
+                <figure>
+                    <a href="assets/clean-slate/confirmation.webp" target="_blank" rel="noopener"><img src="assets/clean-slate/confirmation.webp" alt="Screenshot of the Clean Slate booking confirmation: &lsquo;You&rsquo;re booked&rsquo; with a management code for rescheduling or cancelling, and Manage appointment and Book another buttons" width="1600" height="1000" loading="lazy"></a>
+                    <figcaption>Booking confirmation</figcaption>
+                </figure>
+                <figure>
+                    <a href="assets/clean-slate/dashboard.webp" target="_blank" rel="noopener"><img src="assets/clean-slate/dashboard.webp" alt="Screenshot of the Clean Slate staff dashboard: counts for today&rsquo;s appointments, this week, pending quotes, and active employees, with upcoming jobs, pending quotes, and recent cancellations" width="1600" height="1000" loading="lazy"></a>
+                    <figcaption>Staff dashboard</figcaption>
+                </figure>
+                <figure>
+                    <a href="assets/clean-slate/mobile.webp" target="_blank" rel="noopener"><img src="assets/clean-slate/mobile.webp" alt="Two mobile screenshots of Clean Slate side by side: the available-times booking step and the staff dashboard" width="1600" height="1000" loading="lazy"></a>
+                    <figcaption>Mobile</figcaption>
+                </figure>
+            </div>
             <div class="detail-grid">
                 <h3>Role</h3>
                 <div><p>Solo designer/developer</p></div>
 
                 <h3>Stack</h3>
-                <div><p>React, TypeScript, Vite, Tailwind CSS, React Router; Vitest; local demo data store for now, with a Supabase schema (Postgres, Auth, row-level security) included; Google Calendar, Resend, and Twilio adapters that run as mocks until configured</p></div>
+                <div><p>React 19, TypeScript, Vite 8, Tailwind CSS 4, React Router 7, date-fns; Vitest and Oxlint; a local demo data store for now, with a Supabase schema (Postgres, Auth, row-level security) and the supabase-js client included; Google Calendar, Resend, and Twilio adapters that run as mocks until configured</p></div>
+
+                <h3>Data model</h3>
+                <div><p>Ten Postgres tables in the Supabase migration: business users, employees, services, customers, appointments, quote requests, weekly employee availability, availability exceptions, notification logs, and business settings. Status enums track appointments and quotes, every table has row-level security turned on, and a GiST exclusion constraint stops one employee from holding two overlapping active appointments.</p></div>
 
                 <h3>Status</h3>
                 <div><p>In progress</p></div>
@@ -427,7 +448,7 @@
                     </ul>
                 </div>
             </div>
-            <p class="detail-note">The image above is a placeholder. The repo is private for now, and screenshots will be added as the build progresses.</p>
+            <p class="detail-note">Screenshots are from a local development build using the demo data store and sample customers. The repo is private for now.</p>
         </div>
     </dialog>
     <dialog id="kitbook-dialog" class="project-dialog" aria-labelledby="kitbook-title">
