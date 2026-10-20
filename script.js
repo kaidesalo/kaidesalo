@@ -57,16 +57,16 @@ const projects = {
         approach: ['Search cards through the Scryfall API and build lists by card type.', 'Fork decks into branches and compare them with added, removed, and replaced cards called out.', 'Share decks publicly or with friends only, with accounts and data in Supabase.'],
         focus: 'Collaboration · Version Comparison · API Integration'
     },
-    foxforge: {
-        title: 'Foxforge',
-        type: 'Personal / In Progress',
-        intro: 'A Microsoft Teams app I\'m scoping and scaffolding, built to live where conversations already happen.',
-        image: 'foxforge.svg',
-        alt: 'Concept mockup of Foxforge, a Teams app with a standup board tab and a bot check-in card',
-        stack:['Microsoft Teams', 'Teams Toolkit', 'TypeScript', 'Node.js'],
-        challenge: 'Foxforge is a project I\'ve put off for a while. The first version starts with the basics: a written scope that defines who it\'s for and what v1 does, plus a bare Teams app that installs and runs end to end.',
-        approach: ['Write a one-page scope covering audience, core job, and v1 boundaries.', 'Scaffold a bare Teams app and sideload it in a dev tenant.', 'Build the smallest version of the core flow from the scope.'],
-        focus: 'Scoping · Platform Setup · Teams Integration'
+    cleanslate: {
+        title: 'Clean Slate',
+        type: 'Booking / In Progress',
+        intro: 'A booking platform for a cleaning service: customers book as guests and only see times the team can actually staff, while staff run the schedule from a private dashboard.',
+        image: 'clean-slate.svg',
+        alt: 'Placeholder title card for Clean Slate; screenshots coming soon',
+        stack:['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Supabase', 'Vitest'],
+        challenge: 'A polished booking UI that still allows double-booking is a failed product. Clean Slate computes available times from business hours, employee schedules, appointment length, blocked time, and calendar busy periods, and re-checks each slot before saving a booking.',
+        approach: ['Guest booking flow with automatic estimates, or a custom quote when an estimate is not confident.', 'A management code on confirmation for rescheduling and cancelling.', 'A private staff dashboard for appointments, calendar, employees, availability, services, and quotes.'],
+        focus: 'Scheduling · Booking Flows · Admin Tools'
     },
     kitbook: {
         title: 'Kitbook',
