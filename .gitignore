@@ -1,0 +1,16 @@
+# Secrets and local env
+.env*
+.dev.vars
+*.pem
+*.key
+
+# Build output and deps
+dist/
+node_modules/
+.wrangler/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
