@@ -186,9 +186,9 @@
                         </article>
                         <article class="project" data-category="tools">
 
-                            <button class="project-open" data-dialog="foxforge-dialog" aria-haspopup="dialog" aria-controls="foxforge-dialog" aria-label="explore foxforge project">
+                            <button class="project-open" data-dialog="cleanslate-dialog" aria-haspopup="dialog" aria-controls="cleanslate-dialog" aria-label="explore clean slate project">
                                 <div class="project-image">
-                                    <img src="assets/foxforge.svg" alt="Concept mockup of Foxforge, a Microsoft Teams app with a standup board tab and a check-in card from the Foxforge bot" width="1400" height="1000" loading="lazy">
+                                    <img src="assets/clean-slate.svg" alt="Placeholder title card for Clean Slate; screenshots coming soon" width="1400" height="1000" loading="lazy">
                                     <span class="project-view">Explore Project 
                                         <span>
                                             <svg class="arrow-svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4">
@@ -201,11 +201,11 @@
                                 <div>
                                     <div class="project-caption">
                                         <div>
-                                            <h3>Foxforge</h3>
-                                            <p>A Microsoft Teams app I&rsquo;ve been meaning to start for a while. First step is a written scope and a bare app scaffold, then building from there.</p>
+                                            <h3>Clean Slate</h3>
+                                            <p>A cleaning-service booking app with guest booking, availability-aware scheduling, and a staff dashboard. In progress.</p>
                                         </div>
                                         <div class="project-meta">
-                                            <span>Personal &middot; In progress</span>
+                                            <span>Booking &middot; In progress</span>
                                         </div>
                                         <span class="project-arrow" aria-hidden="true">
                                             <svg class="arrow-svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4">
@@ -215,7 +215,7 @@
                                     </div>
                                 </div>
                                 <div class="project-tags">
-                                    <span>Microsoft Teams</span>
+                                    <span>React</span>
                                     <span>TypeScript</span>
                                     <span>In progress</span>
                                 </div>
@@ -366,7 +366,7 @@
                 <div><p>Solo designer/developer</p></div>
 
                 <h3>Stack</h3>
-                <div><p>Next.js, React, TypeScript, Tailwind CSS, shadcn/ui, Supabase; Scryfall API</p></div>
+                <div><p>Next.js, React, TypeScript, Tailwind CSS, shadcn/ui; Scryfall API; local data store for now, with a Supabase schema ready for hosted auth and data</p></div>
 
                 <h3>Status</h3>
                 <div><p>In progress</p></div>
@@ -374,7 +374,7 @@
                 <h3>Overview</h3>
                 <div>
                     <p>Spellbranch is a Magic: The Gathering deck builder I&rsquo;ve been meaning to ship for a while. It started as a card-sorting page and grew into a place to build decks with friends: search cards, put a list together, and share it publicly or with friends only.</p>
-                    <p>The core idea is branching. A friend can fork your deck and try their own cuts, then you compare the branch against the source side by side, with added, removed, and replaced cards called out, so game-night experiments never overwrite the original list. Card search and canonical card data come from the Scryfall API; accounts and decks live in Supabase.</p>
+                    <p>The core idea is branching. A friend can fork your deck and try their own cuts, then you compare the branch against the source side by side, with added, removed, and replaced cards called out, so game-night experiments never overwrite the original list. Friends can also leave comments on a deck or a branch. Card search and card data come from the Scryfall API. For now the app runs on a local data store, with a Supabase schema (including row-level security policies) ready for hosted auth and data.</p>
                     <p>I&rsquo;m building it as a personal portfolio piece and a daily driver for my own decks. The repo is private for now while I finish the first public version.</p>
                 </div>
 
@@ -390,45 +390,44 @@
             <p class="detail-note">Screenshots are from a local development build using demo accounts. The repo is private for now, and a live demo is coming soon.</p>
         </div>
     </dialog>
-    <dialog id="foxforge-dialog" class="project-dialog" aria-labelledby="foxforge-title">
+    <dialog id="cleanslate-dialog" class="project-dialog" aria-labelledby="cleanslate-title">
         <div class="dialog-toolbar">
             <span class="eyebrow">Project 02 / 03</span>
             <button type="button" class="close-dialog" aria-label="close project details">Close <span aria-hidden="true">&times;</span></button>
         </div>
         <div class="detail-content">
-            <p class="detail-kicker">Personal project &middot; Microsoft Teams</p>
-            <h2 id="foxforge-title">Foxforge</h2>
-            <p class="detail-intro">A Microsoft Teams app I&rsquo;m scoping and scaffolding, built to live where conversations already happen.</p>
-            <img class="detail-image" src="assets/foxforge.svg" alt="Concept mockup of Foxforge inside a generic Teams-style workspace: a Foxforge tab with a Yesterday, Today, and Blockers standup board beside a daily standup card posted by the Foxforge bot" width="1400" height="1000" loading="lazy">
-            <p class="detail-caption">Concept image</p>
+            <p class="detail-kicker">Booking platform &middot; Web</p>
+            <h2 id="cleanslate-title">Clean Slate</h2>
+            <p class="detail-intro">A booking platform for a cleaning service: customers book as guests and only see times the team can actually staff, while staff run the schedule from a private dashboard.</p>
+            <img class="detail-image" src="assets/clean-slate.svg" alt="Placeholder title card for Clean Slate; screenshots coming soon" width="1400" height="1000" loading="lazy">
+            <p class="detail-caption">Placeholder image</p>
             <div class="detail-grid">
                 <h3>Role</h3>
                 <div><p>Solo designer/developer</p></div>
 
                 <h3>Stack</h3>
-                <div><p>Microsoft Teams; Teams Toolkit, TypeScript, Node.js (planned)</p></div>
+                <div><p>React, TypeScript, Vite, Tailwind CSS, React Router; Vitest; local demo data store for now, with a Supabase schema (Postgres, Auth, row-level security) included; Google Calendar, Resend, and Twilio adapters that run as mocks until configured</p></div>
 
                 <h3>Status</h3>
                 <div><p>In progress</p></div>
 
                 <h3>Overview</h3>
                 <div>
-                    <p>Foxforge is a Microsoft Teams app I&rsquo;ve been putting off for longer than I&rsquo;d like to admit. Rather than wait for the perfect plan, I&rsquo;m starting small: write down what it should do, then get a bare app running inside Teams.</p>
-                    <p>The first milestone is deliberately unglamorous: a written scope covering who it&rsquo;s for, the one job it needs to do well, and what&rsquo;s out of scope for v1, plus a minimal Teams scaffold that installs and runs end to end.</p>
-                    <p>I&rsquo;m building it as a portfolio piece and a way to learn how Teams apps are put together: the manifest, sideloading, and the platform&rsquo;s conventions.</p>
+                    <p>Clean Slate is a booking platform for a cleaning service. Customers book as guests through a step-by-step flow (service, property, estimate or quote, schedule, contact, and review) and receive a management code they can use later to reschedule or cancel. Staff work from a private dashboard with appointments, a day/week/month calendar, employees, availability, services and pricing, and quote approvals.</p>
+                    <p>Scheduling reliability is the core of the product. Available times are computed from business hours, employee schedules, appointment length, blocked time, and calendar busy periods, and each booking re-checks its slot before it&rsquo;s saved so the same time can&rsquo;t be double-booked. When the pricing rules can&rsquo;t produce a confident estimate, the request becomes a custom quote instead.</p>
+                    <p>The MVP runs on a local demo data store, with the Supabase schema, row-level security policies, and Vitest coverage for availability, pricing, and the booking lifecycle already in place. Calendar, email, and SMS integrations go through adapters that log mock output until real credentials are connected.</p>
                 </div>
 
                 <h3>Next</h3>
                 <div>
                     <ul>
-                        <li>Write a one-page scope: audience, core job, v1 boundaries</li>
-                        <li>Scaffold a bare Teams app and sideload it in a dev tenant</li>
-                        <li>Build the smallest version of the core flow from the scope</li>
-                        <li>Publish the repo, then add screenshots here</li>
+                        <li>Move guest booking writes to Supabase server-side functions</li>
+                        <li>Connect Google Calendar, Resend, and Twilio through a server proxy</li>
+                        <li>Roadmap: Stripe deposits and automated appointment reminders</li>
                     </ul>
                 </div>
             </div>
-            <p class="detail-note">The image above is a concept mockup. Screenshots, the repo, and a demo will be added as the build progresses.</p>
+            <p class="detail-note">The image above is a placeholder. The repo is private for now, and screenshots will be added as the build progresses.</p>
         </div>
     </dialog>
     <dialog id="kitbook-dialog" class="project-dialog" aria-labelledby="kitbook-title">
@@ -445,6 +444,9 @@
             <div class="detail-grid">
                 <h3>Stack</h3>
                 <div><p>React, TypeScript, D3.js, Node.js, PostgreSQL (concept stack)</p></div>
+
+                <h3>Status</h3>
+                <div><p>Concept (design mockup; all figures are sample data)</p></div>
 
                 <h3>Overview</h3>
                 <div>
