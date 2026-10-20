@@ -162,7 +162,7 @@
                                     <div class="project-caption">
                                         <div>
                                             <h3>Spellbranch</h3>
-                                            <p>A social Magic: The Gathering deck builder where friends search cards through the Scryfall API, fork a deck into independent branches, and compare every change side by side. I&rsquo;m building it with Next.js, React, TypeScript, Tailwind CSS, and shadcn/ui, with a Supabase schema for hosted auth and data. It&rsquo;s in progress, and the repo stays private until the first public version is ready.</p>
+                                            <p>A social MTG deck builder with Scryfall card search, where friends can fork a deck into branches and compare every change. In progress.</p>
                                         </div>
                                         <div class="project-meta">
                                             <span>Personal &middot; In progress</span>
@@ -200,7 +200,7 @@
                                     <div class="project-caption">
                                         <div>
                                             <h3>Foxforge</h3>
-                                            <p>A Microsoft Teams app I&rsquo;ve been meaning to start for a while, built to live where conversations already happen. The planned stack is Teams Toolkit with TypeScript and Node.js. It&rsquo;s in progress, starting with a written scope and a bare app scaffold, then building from there.</p>
+                                            <p>A Microsoft Teams app I&rsquo;ve been meaning to start for a while. First step is a written scope and a bare app scaffold, then building from there.</p>
                                         </div>
                                         <div class="project-meta">
                                             <span>Personal &middot; In progress</span>
@@ -238,7 +238,7 @@
                                     <div class="project-caption">
                                         <div>
                                             <h3>Kitbook</h3>
-                                            <p>A fox-themed personal finance tracker concept that shows your balance, monthly budget, spending by category, and a savings goal at a glance. The concept stack is React, TypeScript, and D3.js, backed by Node.js and PostgreSQL. For now it&rsquo;s a concept only: the dashboard is a design mockup, and every figure in it is sample data.</p>
+                                            <p>A fox-themed personal finance tracker concept that shows your balance, budget, and spending at a glance.</p>
                                         </div>
                                         <div class="project-meta">
                                             <span>Fintech &middot; Concept</span>
@@ -364,7 +364,7 @@
                 <div><p>Solo designer/developer</p></div>
 
                 <h3>Stack</h3>
-                <div><p>Next.js, React, TypeScript, Tailwind CSS, shadcn/ui, Supabase; Scryfall API</p></div>
+                <div><p>Next.js, React, TypeScript, Tailwind CSS, shadcn/ui; Scryfall API; local data store for now, with a Supabase schema ready for hosted auth and data</p></div>
 
                 <h3>Status</h3>
                 <div><p>In progress</p></div>
@@ -372,7 +372,7 @@
                 <h3>Overview</h3>
                 <div>
                     <p>Spellbranch is a Magic: The Gathering deck builder I&rsquo;ve been meaning to ship for a while. It started as a card-sorting page and grew into a place to build decks with friends: search cards, put a list together, and share it publicly or with friends only.</p>
-                    <p>The core idea is branching. A friend can fork your deck and try their own cuts, then you compare the branch against the source side by side, with added, removed, and replaced cards called out, so game-night experiments never overwrite the original list. Card search and canonical card data come from the Scryfall API; accounts and decks live in Supabase.</p>
+                    <p>The core idea is branching. A friend can fork your deck and try their own cuts, then you compare the branch against the source side by side, with added, removed, and replaced cards called out, so game-night experiments never overwrite the original list. Friends can also leave comments on a deck or a branch. Card search and card data come from the Scryfall API. For now the app runs on a local data store, with a Supabase schema (including row-level security policies) ready for hosted auth and data.</p>
                     <p>I&rsquo;m building it as a personal portfolio piece and a daily driver for my own decks. The repo is private for now while I finish the first public version.</p>
                 </div>
 
@@ -411,7 +411,7 @@
 
                 <h3>Overview</h3>
                 <div>
-                    <p>Foxforge is a Microsoft Teams app I&rsquo;ve been putting off for longer than I&rsquo;d like to admit. Rather than wait for the perfect plan, I&rsquo;m starting small: write down what it should do, then get a bare app running inside Teams.</p>
+                    <p>Foxforge is a Microsoft Teams app that I&rsquo;m building in deliberate steps: first define what it should do, then get a bare app running inside Teams.</p>
                     <p>The first milestone is deliberately unglamorous: a written scope covering who it&rsquo;s for, the one job it needs to do well, and what&rsquo;s out of scope for v1, plus a minimal Teams scaffold that installs and runs end to end.</p>
                     <p>I&rsquo;m building it as a portfolio piece and a way to learn how Teams apps are put together: the manifest, sideloading, and the platform&rsquo;s conventions.</p>
                 </div>
@@ -443,6 +443,9 @@
             <div class="detail-grid">
                 <h3>Stack</h3>
                 <div><p>React, TypeScript, D3.js, Node.js, PostgreSQL (concept stack)</p></div>
+
+                <h3>Status</h3>
+                <div><p>Concept (design mockup; all figures are sample data)</p></div>
 
                 <h3>Overview</h3>
                 <div>
