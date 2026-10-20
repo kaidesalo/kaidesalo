@@ -59,7 +59,7 @@ const projects = {
     },
     cleanslate: {
         title: 'Clean Slate',
-        type: 'Booking / In Progress',
+        type: 'Client / In Progress',
         intro: 'A booking platform for a cleaning service: customers book as guests and only see times the team can actually staff, while staff run the schedule from a private dashboard.',
         image: 'clean-slate/booking-times.webp',
         alt: 'Screenshot of Clean Slate\'s booking flow showing open appointment slots by day',
