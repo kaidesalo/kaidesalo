@@ -59,11 +59,11 @@ const projects = {
     },
     cleanslate: {
         title: 'Clean Slate',
-        type: 'Booking / In Progress',
+        type: 'Client / In Progress',
         intro: 'A booking platform for a cleaning service: customers book as guests and only see times the team can actually staff, while staff run the schedule from a private dashboard.',
-        image: 'clean-slate.svg',
-        alt: 'Placeholder title card for Clean Slate; screenshots coming soon',
-        stack:['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Supabase', 'Vitest'],
+        image: 'clean-slate/booking-times.webp',
+        alt: 'Screenshot of Clean Slate\'s booking flow showing open appointment slots by day',
+        stack:['React 19', 'TypeScript', 'Vite 8', 'Tailwind CSS 4', 'React Router 7', 'Supabase', 'Vitest'],
         challenge: 'A polished booking UI that still allows double-booking is a failed product. Clean Slate computes available times from business hours, employee schedules, appointment length, blocked time, and calendar busy periods, and re-checks each slot before saving a booking.',
         approach: ['Guest booking flow with automatic estimates, or a custom quote when an estimate is not confident.', 'A management code on confirmation for rescheduling and cancelling.', 'A private staff dashboard for appointments, calendar, employees, availability, services, and quotes.'],
         focus: 'Scheduling · Booking Flows · Admin Tools'
