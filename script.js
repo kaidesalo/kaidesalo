@@ -48,13 +48,13 @@ window.matchMedia('(min-width: 701px)').addEventListener('change', e => {
 const projects = {
     spellbranch: {
         title: 'Spellbranch',
-        type: 'Personal / In Progress',
+        type: 'Personal / Public beta',
         intro: 'A web app for building Magic: The Gathering decks with friends: search cards, fork a deck into branches, and compare every change.',
-        image: 'spellbranch/deck-detail.webp',
-        alt: 'Screenshot of Spellbranch\'s deck page with branches, Scryfall card search, and the deck list',
+        image: 'spellbranch/landing.webp',
+        alt: 'Screenshot of the Spellbranch landing page with a branch view comparing Main and Weekend cuts',
         stack:['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'shadcn/ui', 'Supabase', 'Scryfall API'],
         challenge: 'Trying a new idea in a shared deck usually means overwriting the original list. Spellbranch lets friends fork a deck into branches and compare each branch against the source side by side, with card search and data from the Scryfall API.',
-        approach: ['Search cards through the Scryfall API and build lists by card type.', 'Fork decks into branches and compare them with added, removed, and replaced cards called out.', 'Share decks publicly or with friends only, with accounts and data in Supabase.'],
+        approach: ['Mainboard, Sideboard, and Maybeboard tabs, with a card\'s printing changed from a grid of printing tiles.', 'My Cards for decks, branches, and a collection, plus a browse page for public decks and lists friends have shared.', 'Deck stats, Moxfield and Archidekt import and export, and branch comparisons that leave the source list intact.'],
         focus: 'Collaboration · Version Comparison · API Integration'
     },
     cleanslate: {
