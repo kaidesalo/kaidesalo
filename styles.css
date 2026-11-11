@@ -184,5 +184,10 @@ img{
 .resume-link:hover .arrow-svg{transform:translate(2px,-2px)}
 @media(max-width:700px){.resume-section{display:block;padding-top:37px;padding-bottom:42px}.resume-heading{gap:20px;align-items:flex-start}.resume-document{width:42px;height:53px;margin-top:2px}.resume-heading h2{font-size:36px;margin-top:11px}.resume-heading .eyebrow{font-size:7px}.resume-heading .section-number{margin-right:8px}.resume-heading p{font-size:11px;max-width:235px;margin-top:11px}.resume-actions{align-items:stretch;gap:12px;margin-top:25px;margin-left:62px}.resume-link{font-size:12px;max-width:280px;gap:22px}.resume-status{font-size:8px}}
 
+/* Links inside project write-ups, such as the Spellbranch beta URL */
+.detail-grid a{text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+.detail-grid a:hover{color:var(--accent)}
+.detail-gallery figure:only-child{grid-column:1/-1}
+
 /* Direct contact form */
 .resume-link{background:none;border:0;border-bottom:1px solid var(--ink);color:var(--ink);text-align:left}.contact-honeypot{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}.contact-button:disabled{opacity:.55;cursor:wait}.contact-button .send-label{font-size:16px;line-height:1.6}.form-status:not(:empty){padding:12px 0;color:#b33e25;line-height:1.7}.contact-success:focus,#contact-success:focus{outline:none}
